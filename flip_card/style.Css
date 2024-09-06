@@ -1,0 +1,126 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flip-card {
+    width: 248px;
+    height: 240px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border: 1px solid #0000001a;
+    border-radius: 10px;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front-image,
+.flip-card-back-image {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.circle_service {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--menu_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) -3px 3px 2.6px;
+}
+
+.circle_service img {
+    width: 65%;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(0%) saturate(2957%) hue-rotate(260deg) brightness(91%) contrast(90%);
+}
+
+.flip-card-front-image p {
+    color: var(--link_text);
+    font-weight: 300;
+    font-size: 13pt;
+    max-width: 150px;
+}
+
+.flip-card-front {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flip-card-back-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff7200e3, #ffa800d6);
+    border-radius: 9px;
+    top: 0;
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back-image {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-back-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 9px;
+}
+
+.flip-card-back-circle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    right: 15%;
+    top: 25%;
+}
+
+.flip-card-back-circle p {
+    color: var(--menu_color);
+    font-weight: 700;
+    font-size: 12pt;
+    max-width: 170px;
+}
+
+.circle_service_back {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle_service_back img {
+    width: 65%;
+    filter: brightness(0) saturate(100%) invert(43%) sepia(92%) saturate(1183%) hue-rotate(359deg) brightness(100%) contrast(105%);
+}

@@ -1,19 +1,23 @@
-.imagep{
-    width: 150px;
+.imagep {
+    width: 200px;
     height: 200px;
     object-fit: cover;
+    border-radius: 100%;
 }
+
 .icon-wrapper {
     cursor: pointer;
     font-size: 2em;
 }
 
-#imagePreview1,#imagePreview2 {
+#imagePreview1,
+#imagePreview2 {
     max-width: 300px;
     display: block;
     margin-top: 10px;
 }
 
-#imageInput1,#imageInput2 {
+#imageInput1,
+#imageInput2 {
     display: none;
 }
